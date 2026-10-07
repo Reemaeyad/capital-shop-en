@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | eCommerce</title>
+
+  <!-- Fonts: Jost (all text) + Dancing Script ("Fashion Sale") -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="wrap wrap--header topbar__inner">
+        <nav class="topbar__links" aria-label="Company">
+          <a href="#">About Us</a>
+          <a href="#">Privacy</a>
+          <a href="#">FAQ</a>
+          <a href="#">Careers</a>
+        </nav>
+        <div class="topbar__right">
+          <a href="#">My Wishlist</a>
+          <a href="#">Track Your Order</a>
+          <ul class="social" aria-label="Social media">
+            <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 1.2 19.93v-7.05h-2.6V12h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.88h-2.39v7.05A10 10 0 0 0 12 2z"/></svg></a></li>
+            <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a></li>
+            <li><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a></li>
+            <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.05c.53-1 1.82-2.04 3.75-2.04 4 0 4.75 2.63 4.75 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67s-1.88 1.27-1.88 2.58V21h-4V9.75z"/></svg></a></li>
+            <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="M9.75 15.02 15.5 11.75 9.75 8.48z" fill="#fff"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main bar -->
+    <div class="mainbar">
+      <div class="wrap wrap--header mainbar__inner">
+
+        <a href="#" class="logo" aria-label="Capital Shop"><img src="images/logo.png" alt="Capital Shop" width="180" height="48"></a>
+
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Baby Collection</a></li>
+            <li class="has-dropdown">
+              <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Pages
+                <svg viewBox="0 0 12 12" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m2 4 4 4 4-4"/></svg>
+              </a>
+              <div class="dropdown">
+                <div class="dropdown__col">
+                  <strong>Pages</strong>
+                  <a href="#">Login</a>
+                  <a href="#">Cart</a>
+                  <a href="#">Product Details</a>
+                  <a href="#">Product Checkout</a>
+                </div>
+                <div class="dropdown__col">
+                  <strong>Blog</strong>
+                  <a href="#">Element</a>
+                  <a href="#">Blog Details</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7.5" r="4"/></svg>
+          </button>
+          <button class="icon-btn cart" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 2.5h3.6l.5 2.5H22l-2.2 9a2 2 0 0 1-1.9 1.5H8.2l.4 2H19v2H7l-2.6-13H1z"/><circle cx="9" cy="20.5" r="1.6"/><circle cx="18" cy="20.5" r="1.6"/></svg>
+            <span class="cart__badge">2</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= ANNOUNCEMENT BAR ================= -->
+  <div class="promo">
+    <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Period Offer <a href="#">Shop Now</a></p>
+  </div>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__kicker">Fashion Sale</p>
+        <h1 class="hero__title">Minimal Menz Style</h1>
+        <p class="hero__desc">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <div class="hero__media">
+        <img src="images/hero-man.jpg" alt="Man wearing a denim shirt">
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="categories">
+      <div class="wrap categories__grid">
+        <a href="#" class="cat-card">
+          <img src="images/cat-men.jpg" alt="Men's Fashion">
+          <div class="cat-card__caption"><h3>Men's Fashion</h3><span class="cat-card__link">Shop Now</span></div>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-women.jpg" alt="Women's Fashion">
+          <div class="cat-card__caption"><h3>Women's Fashion</h3><span class="cat-card__link">Shop Now</span></div>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-baby.jpg" alt="Baby Fashion">
+          <div class="cat-card__caption"><h3>Baby Fashion</h3><span class="cat-card__link">Shop Now</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= TRENDING THIS WEEK ================= -->
+    <section class="trending">
+      <div class="wrap">
+        <div class="trending__head">
+          <h2 class="trending__title">Trending This Week</h2>
+          <div class="tabs" role="tablist">
+            <button class="tabs__btn" role="tab" aria-selected="false">Men</button>
+            <button class="tabs__btn is-active" role="tab" aria-selected="true">Women</button>
+            <button class="tabs__btn" role="tab" aria-selected="false">Baby</button>
+            <button class="tabs__btn" role="tab" aria-selected="false">Fashion</button>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="slider" id="slider">
+          <button class="slider__arrow slider__arrow--prev" aria-label="Previous" data-dir="-1">
+            <svg viewBox="0 0 14 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3 3 12l8 9"/></svg>
+          </button>
+
+          <div class="slider__viewport">
+            <ul class="slider__track" id="track">
+              <!-- 8 items (the 4 photos from the video repeated) -->
+            </ul>
+          </div>
+
+          <button class="slider__arrow slider__arrow--next" aria-label="Next" data-dir="1">
+            <svg viewBox="0 0 14 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 8 9-8 9"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMER TESTIMONIAL ================= -->
+    <section class="testimonial">
+      <div class="wrap">
+        <h2 class="testimonial__title">Customer Testimonial</h2>
+
+        <div class="testi">
+          <button class="testi__arrow" aria-label="Previous testimonial" data-t="-1">
+            <svg viewBox="0 0 14 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3 3 12l8 9"/></svg>
+          </button>
+
+          <div class="testi__slides">
+            <figure class="testi__slide is-active">
+              <blockquote>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</blockquote>
+              <figcaption class="testi__author">
+                <img src="images/avatar.jpg" alt="" width="66" height="66">
+                <div><strong>Petey Cruiser</strong><span>Designer at Colorlib</span></div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <button class="testi__arrow" aria-label="Next testimonial" data-t="1">
+            <svg viewBox="0 0 14 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 8 9-8 9"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES STRIP ================= -->
+    <section class="features" aria-label="Store benefits">
+      <div class="wrap features__grid">
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h14v10H1zM15 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          <div><h3>Free Shipping</h3><p>On all orders over $99</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+          <div><h3>Easy Returns</h3><p>30 days money back</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <div><h3>Secure Payment</h3><p>100% protected checkout</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="4" height="6" rx="1.5"/><rect x="18" y="14" width="4" height="6" rx="1.5"/></svg>
+          <div><h3>24/7 Support</h3><p>We are always here to help</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+      <div class="wrap newsletter__inner">
+        <p class="newsletter__kicker">Newsletter</p>
+        <h2 class="newsletter__title">Get 10% Off Your First Order</h2>
+        <p class="newsletter__desc">Subscribe to get the latest news about new arrivals, sales and exclusive offers.</p>
+        <form class="newsletter__form" id="newsletter" novalidate>
+          <label class="sr-only" for="nl-email">Email address</label>
+          <input type="email" id="nl-email" placeholder="Enter your email address" autocomplete="email" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p class="newsletter__msg" id="nl-msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ================= YOU MAY LIKE ================= -->
+    <section class="you-may-like-section" aria-labelledby="you-may-like-title">
+      <h2 class="you-may-like-title" id="you-may-like-title">You May Like</h2>
+
+      <div class="you-may-like-carousel" id="you-may-like-carousel">
+        <button class="you-may-like-arrow you-may-like-arrow--prev" id="you-may-like-prev" type="button" aria-label="Previous products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div class="you-may-like-viewport">
+          <ul class="you-may-like-track" id="you-may-like-track"><!-- cards are rendered by script.js --></ul>
+        </div>
+
+        <button class="you-may-like-arrow you-may-like-arrow--next" id="you-may-like-next" type="button" aria-label="Next products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= LATEST NEWS ================= -->
+    <section class="latest-news" aria-labelledby="latest-news-title">
+      <div class="latest-news-container">
+
+        <h2 class="latest-news-title" id="latest-news-title">Latest News</h2>
+
+        <div class="latest-news-grid">
+
+          <article class="latest-news-card">
+            <a href="#" class="latest-news-image" aria-label="What Curling Irons Are The Best Ones">
+              <img src="images/image.png" alt="Red bottle on a red background">
+            </a>
+            <p class="latest-news-category">Fashion Tips</p>
+            <h3 class="latest-news-heading"><a href="#">What Curling Irons Are The Best Ones</a></h3>
+            <p class="latest-news-description">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+            <a href="#" class="latest-news-link">Read More</a>
+          </article>
+
+          <article class="latest-news-card">
+            <a href="#" class="latest-news-image" aria-label="What Curling Irons Are The Best Ones">
+              <img src="images/latest-news/image.png" alt="Clothes and accessories laid out with a book and a shoe">
+            </a>
+            <p class="latest-news-category">Fashion Tips</p>
+            <h3 class="latest-news-heading"><a href="#">What Curling Irons Are The Best Ones</a></h3>
+            <p class="latest-news-description">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+            <a href="#" class="latest-news-link">Read More</a>
+          </article>
+
+          <article class="latest-news-card">
+            <a href="#" class="latest-news-image" aria-label="What Curling Irons Are The Best Ones">
+              <img src="images/you-may-like/image.png" alt="Hand holding a green bottle">
+            </a>
+            <p class="latest-news-category">Fashion Tips</p>
+            <h3 class="latest-news-heading"><a href="#">What Curling Irons Are The Best Ones</a></h3>
+            <p class="latest-news-description">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+            <a href="#" class="latest-news-link">Read More</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__col footer__about">
+        <a href="#" class="logo" aria-label="Capital Shop"><img src="images/logo.png" alt="Capital Shop" width="160" height="43"></a>
+        <p>Everybody is different, which is why we offer styles for every body. Quality fashion for men, women and kids.</p>
+        <ul class="social social--footer" aria-label="Social media">
+          <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 1.2 19.93v-7.05h-2.6V12h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.88h-2.39v7.05A10 10 0 0 0 12 2z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="M9.75 15.02 15.5 11.75 9.75 8.48z" fill="#fdf6f6"/></svg></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Baby Collection</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Sale</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Help">
+        <h3>Help</h3>
+        <a href="#">Track Your Order</a>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Contact Us</h3>
+        <p>123 Fashion Street, New York, NY 10001</p>
+        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+        <a href="mailto:support@capitalshop.com">support@capitalshop.com</a>
+        <p class="footer__hours">Mon – Fri: 9:00 – 18:00</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="wrap footer__bottom-inner">
+        <p>&copy; <span id="year">2026</span> Capital Shop. All rights reserved.</p>
+        <ul class="footer__pay" aria-label="Payment methods">
+          <li>VISA</li><li>MasterCard</li><li>PayPal</li><li>Apple Pay</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 15 7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
